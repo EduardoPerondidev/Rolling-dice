@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #EAEAEA;
+    font-family: sans-serif;
+}
+
+.background{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1D2A38;
+}
+
+.title{
+    margin-bottom: 35px;
+    color: white;
+}
+.lists{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.number-text{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 15%;
+    justify-content: space-between;
+    list-style: none;
+    border-radius: 10px;
+    padding: 15px 0;
+}
+
+.number-text-list{
+    font-size: larger;
+    background-color: #FFFFFF;
+    width: 80%;
+    height: 6%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 0 5px;
+    align-items: flex-end;
+    overflow-y: hidden;
+    border: 1px solid white;
+}
+
+.list-number{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.frequency{
+    display: flex;
+    align-items: flex-end;
+    background-color: #FFFFFF;
+    width: 80px;
+    justify-content: center;
+    margin-bottom: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    animation-name: slide;
+    animation-duration: .3s;
+}
+.odd{
+    background-color: #00BBA9;
+}
+
+.number-item{
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.roll-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.number{
+    margin: 0;
+    height: 45px;
+    width: 400px;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: larger;
+    padding: 8px;
+    border: 2px solid transparent;
+    outline: none;
+    transition: 0.4s;
+}
+.number:focus{
+    border: 2px solid #00BBA9;
+    box-shadow: 0px 0px 25px 2px #00BBA9;
+}
+
+.button{
+    height: 45px;
+    width: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    background-color: #FFFFFF;
+    transition: 0.4s;
+}
+.button:hover{
+    border: 2px solid #00BBA9;
+    box-shadow: 0px 0px 25px 2px #00BBA9;
+}
+.button:active{
+    background-color: #E2E2E2;
+}
+
+@keyframes slide{
+    from{
+        height: 0px;
+    }
+}
